@@ -1,3 +1,5 @@
+package array;
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -19,8 +21,9 @@ import java.util.Map;
  * Example 3:
  * Input: nums = [3,3], target = 6
  * Output: [0,1]
+ * @author chris
  */
-public class Twosum {
+public class TwoSum {
 
     //雙迴圈暴力解
 //    public static int[] twoSum(int[] nums, int target) {
