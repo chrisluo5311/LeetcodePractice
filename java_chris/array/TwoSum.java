@@ -25,7 +25,7 @@ import java.util.Map;
  */
 public class TwoSum {
 
-    //雙迴圈暴力解
+    //Brute Force
 //    public static int[] twoSum(int[] nums, int target) {
 //        int[] ans = new int[2];
 //        for (int i = 0; i <= nums.length - 2; i++) {
@@ -43,7 +43,7 @@ public class TwoSum {
 //        return ans;
 //    }
 
-    //使用HashMap解
+    //Using HashMap
     public static int[] twoSum(int[] nums, int target) {
         Map<Integer,Integer> map = new HashMap<Integer, Integer>();
         int[] ans = new int[2];
