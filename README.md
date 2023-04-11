@@ -37,4 +37,4 @@
  
 |  題目  |  Java  |  說明  |    
 |:------:|:--------:|:------:|
-|  TwoSum  | 1   | `雙迴圈暴力解`、`HashMap解`   | 
+|  TwoSum  | [TwoSum](https://github.com/chrisluo5311/LeetcodePractice/blob/main/java_chris/Twosum.java)   | `雙迴圈暴力解` `HashMap解`   | 
