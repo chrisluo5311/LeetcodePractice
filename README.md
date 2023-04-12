@@ -39,3 +39,4 @@
 |:------:|:--------:|:--------:|:------:|:------:|
 |  TwoSum  | [TwoSum](https://github.com/chrisluo5311/LeetcodePractice/blob/main/java_chris/Twosum.java)   | `雙迴圈暴力解` `HashMap解`   |         |         |
 |  MedianSortedArrays | [MedianSortedArrays](https://github.com/chrisluo5311/LeetcodePractice/blob/main/java_chris/array/MedianSortedArrays.java) | `Binary Search` | | |
+| MaxArea  | [MaxArea](https://github.com/chrisluo5311/LeetcodePractice/blob/main/java_chris/array/MaxArea.java)   | `TwoPointers`   |         |         |
