@@ -35,8 +35,8 @@
 
  <h2 ><img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/null/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-color-tal-revivo.png"/> &nbsp題目對應: </h2>
  
-|  題目  |  chris  |  說明  | julia  |  說明  |    
-|:------:|:--------:|:--------:|:------:|:------:|
-|  TwoSum  | [TwoSum](https://github.com/chrisluo5311/LeetcodePractice/blob/main/java_chris/Twosum.java)   | `雙迴圈暴力解` `HashMap解`   |         |         |
-|  MedianSortedArrays | [MedianSortedArrays](https://github.com/chrisluo5311/LeetcodePractice/blob/main/java_chris/array/MedianSortedArrays.java) | `Binary Search` | | |
-| MaxArea  | [MaxArea](https://github.com/chrisluo5311/LeetcodePractice/blob/main/java_chris/array/MaxArea.java)   | `TwoPointers`   |         |         |
+|  #  |  題目  |  chris  |  說明  | julia  |  說明  |    
+|:------:|:------:|:--------:|:--------:|:------:|:------:|
+| 1 |  TwoSum  | [TwoSum](https://github.com/chrisluo5311/LeetcodePractice/blob/main/java_chris/Twosum.java)   | `雙迴圈暴力解` `HashMap解`   |         |         |
+| 4 |  MedianSortedArrays | [MedianSortedArrays](https://github.com/chrisluo5311/LeetcodePractice/blob/main/java_chris/array/MedianSortedArrays.java) | `Binary Search` | | |
+| 11 | MaxArea  | [MaxArea](https://github.com/chrisluo5311/LeetcodePractice/blob/main/java_chris/array/MaxArea.java)   | `TwoPointers`   |         |         |
