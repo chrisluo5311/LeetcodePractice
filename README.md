@@ -37,6 +37,6 @@
  
 |  #  |  題目  |  chris  |  說明  | julia  |  說明  |    
 |:------:|:------:|:--------:|:--------:|:------:|:------:|
-| 1 |  TwoSum  | [TwoSum](https://github.com/chrisluo5311/LeetcodePractice/blob/main/java_chris/Twosum.java)   | `雙迴圈暴力解` `HashMap解`   |         |         |
+| 1 |  TwoSum  | [TwoSum](https://github.com/chrisluo5311/LeetcodePractice/blob/main/java_chris/array/TwoSum.java)   | `雙迴圈暴力解` `HashMap解`   |         |         |
 | 4 |  MedianSortedArrays | [MedianSortedArrays](https://github.com/chrisluo5311/LeetcodePractice/blob/main/java_chris/array/MedianSortedArrays.java) | `Binary Search` | | |
 | 11 | MaxArea  | [MaxArea](https://github.com/chrisluo5311/LeetcodePractice/blob/main/java_chris/array/MaxArea.java)   | `TwoPointers`   |         |         |
