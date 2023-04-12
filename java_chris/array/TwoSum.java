@@ -25,27 +25,30 @@ import java.util.Map;
  */
 public class TwoSum {
 
-    //Brute Force
-//    public static int[] twoSum(int[] nums, int target) {
-//        int[] ans = new int[2];
-//        for (int i = 0; i <= nums.length - 2; i++) {
-//            for (int j = i + 1; j < nums.length; j++) {
-//                int first = nums[i];
-//                int second = nums[j];
-//                int sum = first + second;
-//                if (sum == target){
-//                    log.info("第一個位置:{},第二個位置:{}",i,j);
-//                    ans[0] = i;
-//                    ans[1] = j;
-//                }
-//            }
-//        }
-//        return ans;
-//    }
-
-    //Using HashMap
+    /**
+     * Brute Force
+     */
     public static int[] twoSum(int[] nums, int target) {
-        Map<Integer,Integer> map = new HashMap<Integer, Integer>();
+        int[] ans = new int[2];
+        for (int i = 0; i <= nums.length - 2; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                int first = nums[i];
+                int second = nums[j];
+                int sum = first + second;
+                if (sum == target){
+                    ans[0] = i;
+                    ans[1] = j;
+                }
+            }
+        }
+        return ans;
+    }
+
+    /**
+     * Using HashMap
+     * */
+    public static int[] twoSumMap(int[] nums, int target) {
+        Map<Integer,Integer> map = new HashMap<>(nums.length);
         int[] ans = new int[2];
         for (int i = 0; i < nums.length; i++){
             int tempNum = target - nums[i];
@@ -66,7 +69,7 @@ public class TwoSum {
 //        int target = 9;
         int target = 6;
 //        int target = 6;
-        System.out.println(Arrays.toString(twoSum(nums, target)));
+        System.out.println(Arrays.toString(twoSumMap(nums, target)));
         System.out.println();
     }
 
