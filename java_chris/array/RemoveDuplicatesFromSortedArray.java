@@ -1,5 +1,8 @@
 package array;
 
+/**
+ * @author chris
+ */
 public class RemoveDuplicatesFromSortedArray {
 
 
