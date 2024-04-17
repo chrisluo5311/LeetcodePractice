@@ -12,6 +12,8 @@ public class LeetCodeTest {
         HashSet<Character> row = new HashSet<Character>();
         System.out.println(row.add('a'));
         System.out.println(row.add('a'));
+
+        System.out.println('b'-'a');
     }
 
 }
