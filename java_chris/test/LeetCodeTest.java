@@ -2,6 +2,7 @@ package test;
 
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Scanner;
 
 /**
  * @author chris
@@ -14,6 +15,11 @@ public class LeetCodeTest {
         System.out.println(row.add('a'));
 
         System.out.println('b'-'a');
+
+
+
+        Scanner scan = new Scanner(System.in);
+        Integer a = scan.nextInt();
     }
 
 }

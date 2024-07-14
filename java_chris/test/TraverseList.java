@@ -9,6 +9,10 @@ public class TraverseList {
         a.add(1);
         a.add(2);
         a.add(3);
+        for (int i : a){
+            System.out.println(i);
+        }
+
         List<Integer> b = new ArrayList<>();
         b.add(3);
         b.add(2);

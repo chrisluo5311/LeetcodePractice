@@ -22,9 +22,14 @@ public class HashMapTest {
             System.out.println(key);
         }
 
+        //update
+        map.put("key2","hakunamatata");
+
         // loop through values
         for (String values : map.values()){
             System.out.println(values);
         }
+
+
     }
 }
