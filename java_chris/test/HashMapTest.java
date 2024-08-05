@@ -1,6 +1,7 @@
 package test;
 
 import java.util.HashMap;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class HashMapTest {
     public static void main(String[] args) {
@@ -30,6 +31,13 @@ public class HashMapTest {
             System.out.println(values);
         }
 
+        HashMap<Integer,Integer> map2 = new HashMap<Integer,Integer>();
+        //add
+        map2.put(0,1);
+        map2.put(1,0);
+        map2.put(2,2);
+        map2.put(3,0);
+        int k = 1;
 
     }
 }

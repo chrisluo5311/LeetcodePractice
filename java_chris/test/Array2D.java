@@ -34,5 +34,17 @@ public class Array2D {
         for (int i : nums2){
             System.out.print(i);
         }
+
+        Set<Integer> s = new HashSet<>();
+        s.add(1);
+        s.add(2);
+        s.add(3);
+        s.add(1);
+        System.out.println("\n---------------------------");
+        List<Integer> sArray = new ArrayList<>();
+        sArray.addAll(s);
+        System.out.println(sArray);
+        System.out.println(sArray.contains(5));
+        System.out.println(sArray.get(0));
     }
 }
