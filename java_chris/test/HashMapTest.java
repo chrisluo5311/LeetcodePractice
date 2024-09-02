@@ -1,6 +1,9 @@
 package test;
 
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class HashMapTest {
@@ -38,6 +41,24 @@ public class HashMapTest {
         map2.put(2,2);
         map2.put(3,0);
         int k = 1;
+
+
+        System.out.println("================================");
+        // 字串
+        String s = "strrt";
+        HashMap<Character,Integer> dic = new HashMap<>();
+        for (char c : s.toCharArray()){
+            if (dic.containsKey(c)){
+                dic.put(c,dic.get(c)+1);
+            } else {
+                dic.put(c,1);
+            }
+        }
+        for (Map.Entry<Character,Integer> entry : dic.entrySet()){
+            System.out.print(entry.getKey());
+            System.out.println(entry.getValue());
+        }
+        System.out.println(List.of(dic));
 
     }
 }
