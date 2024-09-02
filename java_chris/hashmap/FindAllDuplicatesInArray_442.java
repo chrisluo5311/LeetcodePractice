@@ -9,7 +9,7 @@ public class FindAllDuplicatesInArray_442 {
 
     public static List<Integer> findDuplicates(int[] nums) {
         List<Integer> output = new ArrayList<>();
-        HashMap<Integer,Integer> dic = new HashMap<>();
+        Map<Integer,Integer> dic = new HashMap<>();
 
         for (int i : nums){
             if (dic.containsKey(i)){

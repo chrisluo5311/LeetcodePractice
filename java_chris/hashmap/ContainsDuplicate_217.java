@@ -1,8 +1,9 @@
 package hashmap;
 import java.util.HashMap;
+import java.util.Map;
 public class ContainsDuplicate_217 {
     public static boolean containsDuplicate(int[] nums) {
-        HashMap<Integer,Integer> output = new HashMap<>();
+        Map<Integer,Integer> output = new HashMap<>();
 
         for (int i : nums){
             if (output.containsKey(i)){
