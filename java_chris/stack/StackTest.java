@@ -19,7 +19,8 @@ public class StackTest {
         // empty(): check if stack is empty. Return true if is empty, false otherwise
         System.out.println("Is stackExample empty: "+stackExample.empty());
         // search(Object o): search for o and return its position
-        int indexOfElement = stackExample.search(2);
+        stackExample.push(4);
+        int indexOfElement = stackExample.search(1);
         System.out.println("index Of Element 2 is: " + indexOfElement);
     }
 }
