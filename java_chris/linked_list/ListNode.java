@@ -1,4 +1,4 @@
-package lists;
+package linked_list;
 
 /**
  * @author chris
