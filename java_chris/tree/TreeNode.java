@@ -16,7 +16,7 @@ public class TreeNode {
 
     // 前序走訪的順序是「中左右」
     public void preOrder(){
-        System.out.println(val);
+        System.out.print(val+", ");
         if(left != null) left.preOrder();
         if(right != null) right.preOrder();
     }
@@ -24,7 +24,7 @@ public class TreeNode {
     // 中序走訪的順序是「左中右
     public void inOrder(){
         if(left != null) left.inOrder();
-        System.out.println(val);
+        System.out.print(val+", ");
         if(right != null) right.inOrder();
     }
 
@@ -32,6 +32,6 @@ public class TreeNode {
     public void postOrder(){
         if(left != null) left.postOrder();
         if(right != null) right.postOrder();
-        System.out.println(val);
+        System.out.print(val+", ");
     }
 }
