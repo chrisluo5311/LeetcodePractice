@@ -21,6 +21,6 @@ public class StackTest {
         // search(Object o): search for o and return its position
         stackExample.push(4);
         int indexOfElement = stackExample.search(1);
-        System.out.println("index Of Element 2 is: " + indexOfElement);
+        System.out.println("Index Of Element 1 is: " + indexOfElement);
     }
 }
