@@ -33,6 +33,10 @@ public class BinarySearchTree {
         for (Integer i : result) {
             System.out.print(i + " ");
         }
+
+        // BFS with level
+        System.out.println("\nBFS with level:");
+        BFS_Level(root);
     }
 
     public static void insert(TreeNode root, int data) {
@@ -82,6 +86,32 @@ public class BinarySearchTree {
             if (currNode.right != null) {
                 queue.add(currNode.right);
             }
+        }
+        return visited;
+    }
+
+    public static List<Integer> BFS_Level(TreeNode root) {
+        if (root == null) {
+            return null;
+        }
+        Queue<TreeNode> queue = new LinkedList<TreeNode>();
+        queue.add(root);
+        int level = 1;
+        List<Integer> visited = new ArrayList<>();
+        while (!queue.isEmpty()){
+            int size = queue.size();
+            for (int i = 0; i < size; i++){
+                TreeNode currNode = queue.poll();
+                System.out.println("第"+level+"層, "+ "val = "+ currNode.val);
+                visited.add(currNode.val);
+                if (currNode.left != null) {
+                    queue.add(currNode.left);
+                }
+                if (currNode.right != null) {
+                    queue.add(currNode.right);
+                }
+            }
+            level++;
         }
         return visited;
     }
