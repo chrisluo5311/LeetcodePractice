@@ -23,7 +23,7 @@ public class QuickSort {
         int pivot = nums[high];
         int i = low - 1; // nums[i] is always <= pivot
         for (int j = low ; j < high; j++) {
-            if (nums[j] < pivot) {
+            if (nums[j] <= pivot) {
                 i++;
                 swap(nums, i, j);
             }
