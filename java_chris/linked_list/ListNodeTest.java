@@ -20,6 +20,7 @@ public class ListNodeTest {
             }
             current_node = current_node.next;
         }
+        System.out.println("沒找到");
     }
 
     public static void addNewNodes(ListNode current_node, int position, ListNode newNode) {
@@ -31,18 +32,18 @@ public class ListNodeTest {
             }
             current_node = current_node.next;
         }
+        System.out.println("position not found");
     }
 
     public static void deleteNodes(ListNode head, ListNode current_node, int deleteVal) {
         System.out.println("刪除新資料");
         ListNode previous = null;
         while (current_node != null) {
-            if (current_node.val == 2) {
+            if (current_node.val == deleteVal) {
                 if (previous != null) {
                     previous.next = current_node.next;
                 } else {
-                    //previous還是null
-                    //代表停留在首節點 => head 直接移到下一個節點
+                    //如果previous還是null,代表停留在首節點 => head 直接移到下一個節點
                     head = current_node.next;
                 }
                 break;
