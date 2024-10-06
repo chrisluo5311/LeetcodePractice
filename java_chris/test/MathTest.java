@@ -11,6 +11,8 @@ public class MathTest {
         int[] result = new int[]{1,2,3,2,5};
         System.out.println(Arrays.toString(result));
 
+        int a = (int) (4321 / Math.pow(10,3));
+        System.out.println(a);
 
 
     }

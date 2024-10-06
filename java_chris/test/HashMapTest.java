@@ -48,11 +48,8 @@ public class HashMapTest {
         String s = "strrt";
         HashMap<Character,Integer> dic = new HashMap<>();
         for (char c : s.toCharArray()){
-            if (dic.containsKey(c)){
-                dic.put(c,dic.get(c)+1);
-            } else {
-                dic.put(c,1);
-            }
+            dic.put(c,dic.getOrDefault(c,0)+1);
+
         }
         for (Map.Entry<Character,Integer> entry : dic.entrySet()){
             System.out.print(entry.getKey());
