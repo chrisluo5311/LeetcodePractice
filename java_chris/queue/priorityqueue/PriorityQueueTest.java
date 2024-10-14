@@ -13,12 +13,7 @@ public class PriorityQueueTest {
 
     public static void maxHeap() {
         System.out.println("Max Heap");
-        PriorityQueue<Integer> maxHeap = new PriorityQueue<>(new Comparator<Integer>() {
-            @Override
-            public int compare(Integer o1, Integer o2) {
-                return o2.compareTo(o1);
-            }
-        });
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a,b) -> b - a);
 
         // add elements
         maxHeap.add(990);
@@ -61,8 +56,8 @@ public class PriorityQueueTest {
 //        minHeap();
 
         // maxHeap
-//        maxHeap();
-
+        maxHeap();
+        System.out.println();
 
         // time complexity for each method
         PriorityQueue<Integer> pq = new PriorityQueue<>();
