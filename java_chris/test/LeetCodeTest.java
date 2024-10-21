@@ -20,6 +20,7 @@ public class LeetCodeTest {
 
         Scanner scan = new Scanner(System.in);
         Integer a = scan.nextInt();
+
     }
 
 }
