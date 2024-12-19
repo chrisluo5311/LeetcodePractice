@@ -57,5 +57,16 @@ public class HashMapTest {
         }
         System.out.println(List.of(dic));
 
+
+        System.out.println("================================");
+        // entrySet
+        HashMap<String, Integer> test2 = new HashMap<>();
+        test2.put("chris",1);
+        test2.put("jack",2);
+        test2.put("hakunamatata",3);
+        for (Map.Entry<String,Integer> entry: test2.entrySet()){
+            System.out.println(entry.getKey());
+            System.out.println(entry.getValue());
+        }
     }
 }

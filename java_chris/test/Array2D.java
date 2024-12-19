@@ -26,5 +26,13 @@ public class Array2D {
             Arrays.stream(i).forEach(System.out::print);
             System.out.println();
         }
+        //
+
+
+        System.out.println("=============");
+        char[][] charArr = new char[][]{{'1','1','1'},{'2','2','2'}};
+        System.out.println(charArr.length);
+        System.out.println(charArr[0].length);
+
     }
 }
