@@ -11,6 +11,25 @@ import java.util.PriorityQueue;
  * */
 public class PriorityQueueTest {
 
+    static class Person {
+        Integer age;
+        Integer peepee_wait_time;
+        public Person(Integer age, Integer peepee_wait_time) {
+            this.age = age;
+            this.peepee_wait_time = peepee_wait_time;
+        }
+    }
+
+    static class MyComp implements Comparator<Person> {
+
+        @Override
+        public int compare(Person p1, Person p2) {
+            // 預設是「小 -> 大」
+            // 加個負號改為「大 -> 小」
+            return -p1.peepee_wait_time.compareTo(p2.peepee_wait_time);
+        }
+    }
+
     public static void maxHeap() {
         System.out.println("Max Heap");
         PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a,b) -> b - a);
@@ -88,5 +107,26 @@ public class PriorityQueueTest {
         for (int i : arr){
             System.out.print(i+",");
         }
+
+        // custom comparator
+        System.out.println("6. Custom Comparator: ");
+        Person[] ppl = new Person[] {
+                new Person(19, 60)
+                ,new Person(28, 45)
+                ,new Person(48, 32)
+                ,new Person(60, 19)
+                ,new Person(33, 200)
+        };
+        PriorityQueue<Person> pq1 = new PriorityQueue<>(ppl.length,new MyComp());
+        for (int i = 0; i < ppl.length; i++) {
+            pq1.add(ppl[i]);
+        }
+
+        System.out.println("peepee wait time: ");
+        while (!pq1.isEmpty()) {
+            Person p = pq1.poll();
+            System.out.print(p.peepee_wait_time + " ");
+        }
+
     }
 }
