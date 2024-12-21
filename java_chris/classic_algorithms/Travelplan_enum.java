@@ -1,4 +1,4 @@
-package array;
+package classic_algorithms;
 
 import java.util.ArrayList;
 import java.util.List;
