@@ -7,5 +7,7 @@ public class IntegerTest {
         ListNode l1 = new ListNode(1);
         Integer a = l1.val;
         System.out.println(a);
+
+
     }
 }
