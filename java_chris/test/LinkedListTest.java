@@ -13,6 +13,8 @@ public class LinkedListTest {
         for (String car : cars){
             System.out.println(car);
         }
-
+        System.out.println("=====================");
+        cars.removeLast();
+        cars.forEach(System.out::println);
     }
 }

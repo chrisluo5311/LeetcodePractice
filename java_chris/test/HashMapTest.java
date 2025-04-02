@@ -1,9 +1,6 @@
 package test;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class HashMapTest {
@@ -68,5 +65,15 @@ public class HashMapTest {
             System.out.println(entry.getKey());
             System.out.println(entry.getValue());
         }
+
+
+
+
+        ///
+        System.out.println("================================");
+        Map<String, List<String>> res = new HashMap<>();
+        List<String> tmp = res.getOrDefault("eat",new ArrayList<>());
+        tmp.add("aet");
+        System.out.println(res.size());
     }
 }

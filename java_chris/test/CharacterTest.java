@@ -55,6 +55,10 @@ public class CharacterTest {
         s.append('a');
         System.out.println(s.toString());
 
+        int shift = 'b';
+        System.out.println(shift);
+        System.out.println('c' - shift);
+
 
     }
 

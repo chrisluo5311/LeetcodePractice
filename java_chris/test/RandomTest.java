@@ -10,9 +10,13 @@ public class RandomTest {
         // nextInt(upperBond): generate numbers from [0 - (upperBond-1)]
         for (int i = 0; i < 10; i++) {
             int a = random.nextInt(10);
-            System.out.print(a+",");
+//            System.out.print(a+",");
         }
 
-
+        Random rn = new Random();
+        for (int i = 0; i < 100; i++) {
+            int b = rn.nextInt(2);
+            System.out.print(b);
+        }
     }
 }
