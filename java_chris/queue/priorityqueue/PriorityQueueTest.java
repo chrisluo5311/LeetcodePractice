@@ -2,6 +2,7 @@ package queue.priorityqueue;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.Map;
 import java.util.PriorityQueue;
 
 /**
@@ -127,6 +128,7 @@ public class PriorityQueueTest {
             Person p = pq1.poll();
             System.out.print(p.peepee_wait_time + " ");
         }
+
 
     }
 }
