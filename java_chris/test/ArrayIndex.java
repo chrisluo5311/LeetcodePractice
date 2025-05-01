@@ -29,5 +29,14 @@ public class ArrayIndex {
                 System.out.print(intervals[i][j] + " ");
             }
         }
+
+        List<String> str_arr = new ArrayList<>();
+        str_arr.add("dog");
+        if (str_arr.contains("dog")){
+            System.out.println("Yes it has dog");
+        } else {
+            System.out.println("NaH");
+
+        }
     }
 }
