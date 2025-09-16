@@ -4,10 +4,17 @@ public class BST {
     private int[] nums;
     private TreeNode root;
     public static void main(String[] args) {
-        int[] nums = new int[]{5,2,6,1,4,7,3};
-        BST bst = new BST(nums);
-        bst.buildTree();
-        System.out.println();
+//        int[] nums = new int[]{5,2,6,1,4,7,3};
+        int[] nums = new int[]{5,6,7,2,1,6,2};
+//        BST bst = new BST(nums);
+//        bst.buildTree();
+//        System.out.println();
+
+        // tree sort ascending or descending
+        System.out.print("\ntree sort (dfs left): ");
+        BST.tree_sort_ascending(nums);
+        System.out.print("\ntree sort (dfs right): ");
+        BST.tree_sort_descending(nums);
 
         // delete
         // x x
@@ -41,20 +48,20 @@ public class BST {
 
 
         /** in-order traversal = n * (getMin + delete) **/
-        while (true) {
-            TreeNode min = bst.getMin();
-            if (min == null) break;
-            System.out.print(min.val + "\t");
-            bst.delete(min.val);
-        }
+//        while (true) {
+//            TreeNode min = bst.getMin();
+//            if (min == null) break;
+//            System.out.print(min.val + "\t");
+//            bst.delete(min.val);
+//        }
 
         /** in-order traversal = n * (getMax + delete) **/
-        while (true) {
-            TreeNode max = bst.getMax();
-            if (max == null) break;
-            System.out.print(max.val + "\t");
-            bst.delete(max.val);
-        }
+//        while (true) {
+//            TreeNode max = bst.getMax();
+//            if (max == null) break;
+//            System.out.print(max.val + "\t");
+//            bst.delete(max.val);
+//        }
     }
 
     public BST(int[] nums) {
@@ -80,7 +87,17 @@ public class BST {
         }
 
         if (val == node.val) {
-            System.out.print("Node: " + val +" already exists");
+            // x
+            if (node.left == null) {
+                node.left = new TreeNode(val);
+            }
+            // left
+            if (node.left != null) {
+                TreeNode node_new_left = new TreeNode(val);
+                node_new_left.left = node.left;
+                node.left = node_new_left;
+            }
+
         } else if (val < node.val) {
             TreeNode child_node = add(node.left, val);
             if (node.left != child_node) {
@@ -195,5 +212,19 @@ public class BST {
         } else {
             return search(node.right, val);
         }
+    }
+
+    /** tree sort (DFS left) */
+    public static void tree_sort_ascending(int[] nums) {
+        BST bst = new BST(nums);
+        bst.buildTree();
+        bst.root.inOrder();
+    }
+
+    /** tree sort (DFS right) */
+    public static void tree_sort_descending(int[] nums) {
+        BST bst = new BST(nums);
+        bst.buildTree();
+        bst.root.inOrderRight();
     }
 }

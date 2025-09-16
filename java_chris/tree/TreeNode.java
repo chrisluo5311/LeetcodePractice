@@ -21,11 +21,17 @@ public class TreeNode {
         if(right != null) right.preOrder();
     }
 
-    // 中序走訪的順序是「左中右
+    // 中序走訪的順序是「左中右」
     public void inOrder(){
         if(left != null) left.inOrder();
         System.out.print(val+", ");
         if(right != null) right.inOrder();
+    }
+
+    public void inOrderRight() {
+        if (right != null) right.inOrderRight();
+        System.out.print(val+", ");
+        if (left != null) left.inOrderRight();
     }
 
     // 後序走訪的順序是「左右中」
