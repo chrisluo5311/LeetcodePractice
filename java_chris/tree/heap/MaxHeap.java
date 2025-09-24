@@ -24,6 +24,8 @@ public class MaxHeap {
 
     // BigO = log(n)
     private void shift_down(int i) {
+        // end condition
+        if (i > this.i_array_end) return;
 
         // pick the bigger child node - binary tree concept, but only pick one node to go
         Integer i_bigger = get_i_bigger_node(i);
@@ -71,7 +73,7 @@ public class MaxHeap {
     public void remove_from_top() {
         // step 01 swap top node with last node
         int i_top = 0;
-        swap(i_top, this.binary_heap_tree.length - 1);
+        swap(i_top, this.i_array_end);
 
         // step 02 pretend the last element removed from the tree
         this.i_array_end--;
