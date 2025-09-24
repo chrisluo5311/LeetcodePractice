@@ -1,24 +1,24 @@
-package tree;
+package tree.leetcode;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import tree.TreeNode;
 
-public class AverageOfLevelsInBinaryTree_637 {
-    public List<Double> averageOfLevels(TreeNode root) {
-        List<Double> ans = new ArrayList<>();
+import java.util.*;
+
+//就是把102題的結果反轉
+public class BinaryTreeLevelOrderTraversal2_107 {
+    public List<List<Integer>> levelOrderBottom(TreeNode root) {
         Queue<TreeNode> queue = new LinkedList<>();
+        List<List<Integer>> ans = new ArrayList<>();
         if (root == null) {
             return ans;
         }
         queue.add(root);
         while (!queue.isEmpty()){
+            List<Integer> temp = new ArrayList<>();
             int levelSize = queue.size();
-            long subTotal = 0;
-            for (int i = 0; i < levelSize ; i++){
+            for (int i = 0 ; i < levelSize ; i++){
                 TreeNode currNode = queue.poll();
-                subTotal += currNode.val;
+                temp.add(currNode.val);
                 if (currNode.left != null){
                     queue.add(currNode.left);
                 }
@@ -26,8 +26,9 @@ public class AverageOfLevelsInBinaryTree_637 {
                     queue.add(currNode.right);
                 }
             }
-            ans.add((double)subTotal/levelSize);
+            ans.add(temp);
         }
+        Collections.reverse(ans);
         return ans;
     }
 }

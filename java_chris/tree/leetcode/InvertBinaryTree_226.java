@@ -1,4 +1,6 @@
-package tree;
+package tree.leetcode;
+
+import tree.TreeNode;
 
 public class InvertBinaryTree_226 {
     public TreeNode invertTree(TreeNode root) {

@@ -1,4 +1,4 @@
-package tree;
+package tree.leetcode;
 
 public class FindFirstAndLastPositionInSortedArray_34 {
     public int[] searchRange(int[] nums, int target) {

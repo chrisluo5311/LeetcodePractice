@@ -1,4 +1,6 @@
-package tree;
+package tree.leetcode;
+
+import tree.TreeNode;
 
 public class BinaryTreeMaximumPathSum_124 {
     static int sub_tree_max = Integer.MIN_VALUE;

@@ -1,4 +1,4 @@
-package tree;
+package tree.leetcode;
 
 public class KokoEatingBananas_875 {
     public int minEatingSpeed(int[] piles, int h) {
