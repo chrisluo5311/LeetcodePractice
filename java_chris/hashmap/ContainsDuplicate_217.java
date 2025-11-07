@@ -19,6 +19,7 @@ public class ContainsDuplicate_217 {
     public static void main(String[] args) {
         boolean output = containsDuplicate(new int[]{1, 2, 3, 1, 5});
         System.out.println(output);
+        String s = "abs";
     }
 
 }
