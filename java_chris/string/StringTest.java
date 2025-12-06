@@ -5,5 +5,10 @@ public class StringTest {
         String a = "27";
         Integer b = Integer.valueOf(a);
         System.out.println(b);
+
+
+        char c = 'a';
+        int c_int = c;
+        System.out.println(c_int);
     }
 }
